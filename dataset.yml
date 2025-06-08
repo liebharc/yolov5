@@ -1,0 +1,16 @@
+train: dataset/images/train/
+val: dataset/images/val/
+nc: 1 # Number of classes (change if needed)
+names: ['staff'] # Class name
+augmentation:
+  mosaic: 1
+  hsv_h: 0.015 # HSV-Hue augmentation
+  hsv_s: 0.7 # HSV-Saturation augmentation
+  hsv_v: 0.4 # HSV-Value augmentation
+  translate: 0.1 # Translation
+  scale: 0.5 # Scale
+  shear: 0.2 # Shear
+  perspective: 0.2 # Perspective
+  flip: 0 # Flip
+  rotate: 5 # Rotation
+  augment: true # Enable other augmentations
